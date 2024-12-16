@@ -1,0 +1,18 @@
+on: push
+name: Deploy to server
+jobs:
+    deploy:
+        name: Deploy
+        runs-on: ubuntu-latest
+        steps:
+            name: get latest code
+            uses: action/checkout@v3
+
+            name: Sync files
+            uses: SamKirkland/FTP-Deploy.Action@4.3.4
+            with:
+                server: alpha.gg-community.de:2022
+                username: {{ secrets.FTPUSERNAME }}
+                password: {{ secrets.FTPPASSWORD }}
+                protocol: ftps
+                server-dir: garrysmod/
