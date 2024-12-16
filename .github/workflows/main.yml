@@ -5,10 +5,10 @@ jobs:
         name: Deploy
         runs-on: ubuntu-latest
         steps:
-            name: get latest code
+        - name: get latest code
             uses: action/checkout@v3
 
-            name: Sync files
+        - name: Sync files
             uses: SamKirkland/FTP-Deploy.Action@4.3.4
             with:
                 server: alpha.gg-community.de:2022
