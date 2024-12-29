@@ -15,5 +15,5 @@ jobs:
         port: 2022
         username: ${{ secrets.FTPUSERNAME }}
         password: ${{ secrets.FTPPASSWORD }}
-        protocol: ftps
+        protocol: sftp
         server-dir: garrysmod/
