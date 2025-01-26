@@ -1,5 +1,5 @@
 name: Upload complete repo (e.g. website) to a SFTP destination
-on: [push]
+on: [pull_request]
 jobs:
   Upload-to-SFTP:
     runs-on: ubuntu-latest
