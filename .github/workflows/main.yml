@@ -17,5 +17,5 @@ jobs:
           compress: true # Compression
           forceUpload: true # Optional, Force uploading all files, Default to false(upload only newer files).
           localDir: "." # Required, Absolute or relative to cwd.
-          remoteDir: "/home/container/" # Required, Absolute path only.
-          exclude: ".git" # Optional. exclude patterns (glob) like .gitignore, use ',' to split, Default to ''.
+          remoteDir: "/" # Required, Absolute path only.
+          exclude: ".git,.github" # Optional. exclude patterns (glob) like .gitignore, use ',' to split, Default to ''.
