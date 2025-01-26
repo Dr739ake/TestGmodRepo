@@ -21,7 +21,7 @@ jobs:
         with:
           ftp-server: alpha.gg-community.de
           ftp-username: ${{secrets.FTPUSERNAME}}
-          ftp-password: ${{secrets.password}}
+          ftp-password: ${{secrets.FTPPASSWORD}}
           local-dir: garrysmod/addons/
       # - run: echo "ls" | ftp ${{ env.FTP_USER_NAME }}:${{ env.FTP_USER_PASS }}@ftp-server/ftp
       # - name: file*delete.md
