@@ -3,9 +3,10 @@
 - name: SFTP upload
   uses: Dylan700/sftp-upload-action@latest
   with:
-    server: sftp.server.com
-    username: jason-bourne
+    server: alpha.gg-community.de
+    username: ${{secrets.FTPUSERNAME}}
     password: ${{secrets.password}}
-    port: 22
+    port: 2022
     uploads: |
-    ./ => ./www/public_html/
+    garrysmod/ => /home/container/garrysmod/
+
