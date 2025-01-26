@@ -13,6 +13,7 @@ jobs:
           host: alpha.gg-community.de #${{ secrets.HOST }} # Recommended to put the credentials in github secrets.
           username: ${{secrets.FTPUSERNAME}}
           password: ${{secrets.FTPPASSWORD}}
+          port: 2022 # Optional, Default to 22.
           compress: true # Compression
           forceUpload: true # Optional, Force uploading all files, Default to false(upload only newer files).
           localDir: "." # Required, Absolute or relative to cwd.
