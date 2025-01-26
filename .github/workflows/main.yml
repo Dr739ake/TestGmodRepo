@@ -8,5 +8,5 @@
     password: ${{secrets.password}}
     port: 2022
     uploads: |
-    garrysmod/ => /home/container/garrysmod/
+    ./ => ./
 
