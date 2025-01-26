@@ -15,7 +15,7 @@ jobs:
           password: ${{secrets.FTPPASSWORD}}
           port: 2022 # Optional, Default to 22.
           compress: true # Compression
-          forceUpload: true # Optional, Force uploading all files, Default to false(upload only newer files).
+          forceUpload: false # Optional, Force uploading all files, Default to false(upload only newer files).
           localDir: "." # Required, Absolute or relative to cwd.
           remoteDir: "/garrysmod/" # "/home/container/" # Required, Absolute path only.
           exclude: ".git,.github" # Optional. exclude patterns (glob) like .gitignore, use ',' to split, Default to ''.
