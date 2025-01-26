@@ -1,5 +1,12 @@
 name: Upload complete repo (e.g. website) to a SFTP destination
-on: [pull_request]
+on:
+  pull_request:
+    # For the develop branch only.
+    branches:
+      - develop
+    # Execute the action on closed (merged) PR.
+    types:
+      [closed]
 jobs:
   Upload-to-SFTP:
     runs-on: ubuntu-latest
